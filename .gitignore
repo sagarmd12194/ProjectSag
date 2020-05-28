@@ -1,2 +1,6 @@
 .idea/
 venv/
+src/__pycache__/
+src/main/__pycache__/
+tests/__pycache__/
+tests/unit/__pycache__/
