@@ -9,8 +9,8 @@ pipeline{
 		stage("Test"){
 			step{
 				echo "Test is running ....."
+				}
 			}
-
 		}
 	}
 }
