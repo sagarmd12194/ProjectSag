@@ -1,5 +1,12 @@
-pytest tests/unit/testCalculator.py
-set current_dir=%cd%
-echo "current directory >>>>> %current_dir%"
 
-coverage run -m \tests\unit\testCalculator.py
+set tests/unit/
+
+pytest "$@"
+time coverage run -m \
+--cov-report=term \
+--cov-report=html:output/test_reports/html \
+--cov-report=xml:output/test_reports/cov.xml
+--cov-report=annotate:output/test_reports/cov_annotate
+--cov-config=.coveragerc \
+--cov="$PWD" \
+--junitxml=output/test_reports/unit_test.xml
