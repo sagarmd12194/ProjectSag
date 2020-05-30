@@ -1,1 +1,1 @@
-pytest tests/unit/tesCalculator.py
+pytest .\tests\unit\testCalculator.py
