@@ -5,12 +5,13 @@ pipeline{
 			step{
 				echo "Build is running ....."
 			}
+		}
 
 		stage("Test"){
 			step{
 				echo "Test is running ....."
-				}
 			}
 		}
+		
 	}
 }
