@@ -4,8 +4,8 @@ pipeline{
 		stage("Build"){
 			steps{
 				echo "Build is running ....."
-				python .\src\main\calc.py
-				echo "Build is sucess ....."
+				.\run_code.bat
+				echo "Build is success ....."
 				
 			}
 		}
@@ -13,8 +13,8 @@ pipeline{
 		stage("Test"){
 			steps{
 				echo "Test is running ....."
-				pytest .\tests\unit\testCalculator.py
-				echo "Test is Sucess ....."
+				.\run_tests.bat
+				echo "Test is Success ....."
 				
 			}
 		}
